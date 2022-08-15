@@ -3,7 +3,7 @@ import { BotService } from "../service/bot";
 
 export class BotController extends BotService {
   /**
-   * Tweet something by passing a string
+   * Tweet GM
    */
   async gm() {
     const message: string = "GM";
