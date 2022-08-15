@@ -18,7 +18,7 @@ provider:
   name: aws
   runtime: nodejs12.x
   memorySize: 2048
-  stage: staging
+  stage: dev
   region: us-east-1
   iam:
     role:
@@ -38,13 +38,13 @@ provider:
 
 functions:
   tweetPrices:
-    handler: app/handler.tweetPrices
+    handler: app/handler.gm
     events:
       - http:
-          path: tweet-prices
+          path: gm
           method: get
       - schedule:
-          name: ${self:service}-${self:custom.stage}-tweet-prices
-          description: "Tweet floor price for top collections"
+          name: ${self:service}-${self:custom.stage}-tweet-gm
+          description: "Tweet GM"
           rate: rate(6 hours)
           enabled: true

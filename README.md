@@ -45,15 +45,15 @@ Serverless: Typescript compiled.
 
 ### To Test It Locally
 
-- Run `npm install` to install all the necessary dependencies.
-- Run `npm run local` use serverless offline to test locally.
+- Run `yarn install` to install all the necessary dependencies.
+- Run `yarn dev` use serverless offline to test locally.
 
 ### Deploy on AWS, simply run:
 
-```
-$ npm run deploy
+```bash
+$ yarn deploy #for staging
 
 # or
 
-$ serverless deploy
+$ deploy:prod #for production
 ```

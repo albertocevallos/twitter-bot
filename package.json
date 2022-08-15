@@ -7,7 +7,7 @@
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "dev": "sls offline start",
     "deploy": "serverless deploy --stage staging",
-    "deploy:prod": "sls deploy --stage prod",
+    "deploy:prod": "sls deploy --stage production",
     "test": "cross-env NODE_ENV=dev mocha -r ts-node/register tests/*.test.ts --exit",
     "coverage": "nyc --reporter lcov npm run test"
   },
