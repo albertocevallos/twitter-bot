@@ -46,5 +46,5 @@ functions:
       - schedule:
           name: ${self:service}-${self:custom.stage}-tweet-gm
           description: "Tweet GM"
-          rate: rate(6 hours)
+          rate: cron(0 13 ? * MON-FRI *)
           enabled: true

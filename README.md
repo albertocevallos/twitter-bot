@@ -22,6 +22,14 @@ This repo contains a simple bot for interacting with the Twitter v2 API. It is p
 - Mocha unit tests and lambda-tester interface test
 - AWS lambda function log view
 
+## Setup AWS
+
+```
+sls config credentials --provider aws \
+ --key <aws_access_key_id> \
+ --secret <aws_secret_access_key>
+```
+
 ## Invoke the function locally
 
 ```bash
