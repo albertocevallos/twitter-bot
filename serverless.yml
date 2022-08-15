@@ -34,7 +34,6 @@ provider:
     APP_SECRET: ${env:APP_SECRET}
     ACCESS_TOKEN: ${env:ACCESS_TOKEN}
     ACCESS_SECRET: ${env:ACCESS_SECRET}
-    PUBLIC_BASE_URL: ${env:PUBLIC_BASE_URL}
 
 functions:
   tweetPrices:
